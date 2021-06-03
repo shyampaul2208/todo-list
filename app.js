@@ -47,7 +47,7 @@ passport.serializeUser(function(user, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret:process.env.CLIENT_SECRET,
-    callbackURL: "http://localhost:3000/auth/google/good"
+    callbackURL: "https://enigmatic-chamber-53464.herokuapp.com/auth/google/good"
   },
   function(accessToken, refreshToken, profile, cb) {
 
@@ -177,6 +177,10 @@ app.post("/auth/google",(req,res)=>{
 
 
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 
 
 
@@ -186,8 +190,8 @@ app.post("/auth/google",(req,res)=>{
 
 
 
-app.listen("3000",()=>{
-    console.log("server is up and running on port 3000");
+app.listen(port,()=>{
+    console.log("server is up and running ");
 })
 
 
