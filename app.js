@@ -126,6 +126,10 @@ app.post("/delete",(req,res)=>{
     }
   });
 
+  app.post("/exit",(req,res)=>{
+    res.redirect("/logout")
+  })
+
   
   
 

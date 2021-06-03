@@ -1,5 +1,5 @@
 <%- include("header")-%>
-      <div class="box" id="heading"> 
+      <div class="box headingbox" id="heading"> 
         <h1> Welcome <%=listTitle%></h1>
       </div>
     <div class="box">
@@ -14,7 +14,7 @@
            
             <p><%=item.name%></p>
            <form action="/delete" method="POST">
-            <button  type="submit" name="del" value=<%=item._id%>>-</button>
+            <button class="delbtn" type="submit" name="del" value=<%=item._id%>>-</button>
            </form>
             
             </div>
@@ -26,6 +26,10 @@
             <form class="submit" action="/good" method="POST">
                 <input type="text" name="newItem" placeholder="New Item" autocomplete="off" required />
                 <button type="submit"  value="<%=listTitle%>" name="list">+</button>
+              </form>
+
+              <form class="logout" action="/exit" method="POST">
+              <button>logout</button>
               </form>
     
     </div>
