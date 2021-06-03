@@ -45,8 +45,8 @@ passport.serializeUser(function(user, done) {
   });
 
 passport.use(new GoogleStrategy({
-    clientID: process.env.CLIENT_ID,
-    clientSecret:process.env.CLIENT_SECRET,
+    clientID:"551558487245-7d6cav6v9okmso7q958i838fe26danu0.apps.googleusercontent.com",
+    clientSecret:"NtO5KnwYJCG_rqp5THASfJ0B",
     callbackURL: "https://enigmatic-chamber-53464.herokuapp.com/auth/google/good"
   },
   function(accessToken, refreshToken, profile, cb) {
