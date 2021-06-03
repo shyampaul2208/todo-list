@@ -47,7 +47,7 @@ passport.serializeUser(function(user, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret:process.env.CLIENT_SECRET,
-    callbackURL: "https://localhost:3000/auth/google/good"
+    callbackURL: "https://enigmatic-chamber-53464.herokuapp.com/auth/google/good"
   },
   function(accessToken, refreshToken, profile, cb) {
 
