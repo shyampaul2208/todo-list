@@ -125,14 +125,10 @@ app.post("/delete",(req,res)=>{
       res.redirect("/good");
     }
   });
+})
 
-  app.post("/exit",(req,res)=>{
-    res.redirect("/logout")
-  })
-
-  
-  
-
+app.post("/exit",(req,res)=>{
+  res.redirect("/logout");
 })
 
 
