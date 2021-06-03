@@ -1,6 +1,5 @@
 html {
   background-color: #e4e9fd;
-  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
   min-height: 1000px;
   font-family: "helvetica neue";
 }
@@ -66,6 +65,12 @@ form.item {
   margin-left: 20px;
 }
 
+button.delbtn{
+  background-color: white;
+  color: rgb(236, 58, 58);
+  font-size: 3rem;
+}
+
 button {
   min-height: 50px;
   width: 50px;
@@ -92,12 +97,15 @@ button {
 
 
 .logout button{
-  position: absolute;
-  right:100px;
-  top:50px;
-  border-radius: 20px;
-  width: auto;
-  height: auto;
+background-color: white;
+color: yellowgreen;
+position: absolute;
+top: 5%;
+right: 5%;
+border-radius: 5px;
+width: auto;
+height: auto ;
+font-size: 1rem;
   
 }
 
@@ -126,4 +134,23 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+
+i{
+  margin: 0 5px;
+}
+
+@media(max-width:700px) {
+  .logout button{
+    font-size: 0.8rem;
+    width: auto;
+  
+    
+
+  }
+  body{
+    text-align: center;
+  }
+
+  
 }

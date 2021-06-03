@@ -10,7 +10,7 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 app.set("view engine","ejs");
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/finaltodoDB",{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false});
+mongoose.connect("mongodb+srv://admin-shyam:shyampaul4041@cluster0.kodas.mongodb.net/finaltodoDB",{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false});
 
 app.use(express.urlencoded({extended:true}))
 
